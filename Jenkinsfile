@@ -7,7 +7,7 @@ node {
 stage 'build'
 
 node {
-    sh 'echo "hello world"
+    sh 'echo "hello world"'
 }
 
 
