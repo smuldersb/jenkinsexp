@@ -1,13 +1,16 @@
 stage 'checkout'
 
 node {
-    git scm
+    checkout scm
 }
 
 stage 'build'
 
 node {
-    sh 'echo "hello world"'
+    echo 'building'
 }
 
-
+stage 'test'
+node {
+    echo 'testing'
+}
